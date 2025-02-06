@@ -1,7 +1,7 @@
 # Release checklist
 1. Ensure local `main` is up to date with respect to `origin/main`.
-2. Update `VERSION` and the version field in `typst.toml`; this should simply be removing the
-   `"-dev"` part.
+2. Update `VERSION`, the version field in `typst.toml` and the `git checkout <TAG>` tag in the
+   `README.md` to use the new version.
 3. Update `CHANGELOG.md`.
 4. Install this version locally using the `install.sh` script, overwriting if needed:
    ```console

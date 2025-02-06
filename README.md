@@ -12,15 +12,9 @@ which should be something like `$HOME/.local/share/typst/packages/local` on Linu
 ### Stable version
 You need to clone this repo, checkout a specific version (tag), and run the install script:
 ```console
-$ git clone git@github.com:kokkonisd/reading-group-theme.git
+$ git clone https://github.com/kokkonisd/reading-group-theme.git
 $ git checkout 0.1.0  # `git tag` lists the available tags
 $ ./install.sh --offline
-```
-
-### Latest (non-stable) version
-Here's a one-liner for a Linux installation.
-```console
-$ bash <(curl -s https://raw.githubusercontent.com/kokkonisd/reading-group-theme/main/install.sh)
 ```
 
 ## How to use

@@ -1,8 +1,6 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 set -e
-
-offline_mode=0
 
 function print_info {
     echo -e "\e[1m\e[38;5;70m> $1\e[0m"
@@ -16,13 +14,6 @@ function fail {
     print_error $1
     exit 1
 }
-
-if [ "$1" == "-o" ] || [ "$1" == "--offline" ]; then
-    offline_mode=1
-elif [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
-    echo "Usage: ./install.sh [-o/--offline]"
-    exit 0
-fi
 
 
 if [ "$TYPST_LOCAL_PACKAGES" == "" ]; then
@@ -48,19 +39,10 @@ fi
 
 mkdir -p $install_dir/
 
-if [ "$offline_mode" == "1" ]; then
-    print_info "Installing in offline mode (copying local files)..."
-    # Just copy local dir to destination.
-    cp -r . $install_dir
-else
-    remote=$(git remote get-url origin)
-    print_info "Cloning from '$remote'..."
-    # Clone & remove git stuff.
-    git clone $remote $install_dir/
-    rm -rf $install_dir/.git*
-fi
-
-# Remove the installer too.
-rm -rf $install_dir/install.sh
+print_info "Installing in offline mode (copying local files)..."
+# Just copy local dir to destination.
+cp -r . $install_dir
+# Remove git stuff and the installer.
+rm -rf $install_dir/{.git*,install.sh}
 
 print_info "Done! Package is now in '$install_dir'."

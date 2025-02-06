@@ -1,0 +1,7 @@
+[package]
+name = "reading-group-theme"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["Dimitri Kokkonis (kokkonisd@gmail.com)"]
+license = "CC-BY-NC-SA-4.0"
+description = "A Toying-based theme for presentations."

@@ -4,4 +4,4 @@ version = "0.1.0"
 entrypoint = "src/lib.typ"
 authors = ["Dimitri Kokkonis (kokkonisd@gmail.com)"]
 license = "CC-BY-NC-SA-4.0"
-description = "A Toying-based theme for presentations."
+description = "A Touying-based theme for presentations."

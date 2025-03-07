@@ -1,4 +1,5 @@
 # Release checklist
+
 1. Ensure local `main` is up to date with respect to `origin/main`.
 2. Update `VERSION`, the version field in `typst.toml` and the `git checkout <TAG>` tag in the
    `README.md` to use the new version.
@@ -13,8 +14,8 @@
    $ typst c examples/simple/presentation.typ
    $ typst c examples/full/presentation.typ
    ```
-6. Commit the changes and tag the commit with the version. For example, for version `X.Y.Z`, tag
-   the commit with `git tag -a X.Y.Z`.
+6. Commit the changes and tag the commit with the version. For example, for version `X.Y.Z`, tag the
+   commit with `git tag -a X.Y.Z`.
 7. Push the commit and the tags.
 8. Prepare for the next version by bumping the PATCH number in the version and appending `"-dev"`.
    This means that `"1.2.3"` should become `"1.2.4-dev"`.

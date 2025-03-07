@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Fix inconsistencies with text size and slide margins
+
 ## 0.1.1
 
 - Update Touying to 0.6.1

@@ -1,6 +1,6 @@
 [package]
 name = "reading-group-theme"
-version = "0.1.1"
+version = "0.1.2"
 entrypoint = "src/lib.typ"
 authors = ["Dimitri Kokkonis (kokkonisd@gmail.com)"]
 license = "CC-BY-NC-SA-4.0"

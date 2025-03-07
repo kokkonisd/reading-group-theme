@@ -1,4 +1,4 @@
-#import "@local/reading-group-theme:0.1.1": *
+#import "@local/reading-group-theme:0.1.2": *
 
 #show: reading-group-theme.with(
     config-info(

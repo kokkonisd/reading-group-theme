@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Only display section title in footing if there is one
+
 ## 0.1.2
 
 - Fix inconsistencies with text size and slide margins

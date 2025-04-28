@@ -1,5 +1,5 @@
 // https://github.com/kokkonisd/reading-group-theme
-#import "@local/reading-group-theme:0.1.2": *
+#import "@local/reading-group-theme:0.1.3": *
 
 #show: reading-group-theme.with(
     config-info(

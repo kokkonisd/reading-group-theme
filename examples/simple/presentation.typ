@@ -10,6 +10,8 @@
 
 #title-slide()
 
+== First slide
+This slide belongs to no section.
 
 = Section 1
 

@@ -128,13 +128,20 @@
                 show: components.cell.with(fill: self.colors.primary, inset: .4em)
                 set text(fill: self.colors.neutral, size: .8em)
                 set align(horizon)
-                // Display the title of the presentation, the section and the slide.
+                // Display the title of the presentation
                 if self.info.title-short != none {
                     self.info.title-short
                     " • "
                 }
-                utils.display-current-heading(level: 1)
-                " • "
+                // Display the section title, if any.
+                context {
+                    let heading-1 = utils.current-heading(level: 1)
+                    if heading-1 != none {
+                        heading-1.body
+                        " • "
+                    }
+                }
+                // Display the slide title.
                 utils.display-current-heading(level: 2)
                 // Display the authors.
                 h(6fr)
